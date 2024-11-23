@@ -1,0 +1,57 @@
+﻿/* Main Page Background and Text Styles */
+header.masthead {
+    height: 100vh;
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url('/img/bg-masthead.jpg'); /* Replace with the actual image path */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    /* Title Styling */
+    header.masthead h1 {
+        font-size: 3.5rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+
+    /* Divider Line */
+    header.masthead .divider {
+        width: 50px;
+        height: 4px;
+        background-color: #f4623a; /* Orange line */
+        margin: 1.5rem auto;
+    }
+
+    /* Paragraph Styling */
+    header.masthead p {
+        font-size: 1.25rem;
+        color: rgba(255, 255, 255, 0.9);
+        margin-bottom: 2rem;
+        max-width: 600px;
+    }
+
+    /* Button Styling */
+    header.masthead a {
+        display: inline-block;
+        background: #f4623a; /* Bright orange */
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 0.8rem 1.5rem;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background 0.3s ease-in-out;
+    }
+
+        header.masthead a:hover {
+            background: #e05a33; /* Darker orange on hover */
+        }
