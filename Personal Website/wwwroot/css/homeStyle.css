@@ -1,4 +1,8 @@
 ﻿/* Main Page Background and Text Styles */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700&display=swap");
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
 header.masthead {
     height: 100vh;
     padding-top: 10rem;
@@ -17,29 +21,32 @@ header.masthead {
 
     /* Title Styling */
     header.masthead h1 {
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 700; /* Use a heavier weight for the title */
         font-size: 3.5rem;
         line-height: 1.2;
-        margin-bottom: 1.5rem; /* Add extra spacing below the title */
-        text-align: center; /* Ensure alignment */
+        text-align: center;
+        margin-bottom: 1rem;
     }
 
-    /* Divider Line */
     header.masthead .divider {
         width: 50px;
         height: 4px;
         background-color: #f4623a;
-        margin: 1.5rem auto;
+        margin: 1.5rem auto; /* Adjust the top margin */
+        margin-top: 0.5rem; /* Reduce this value for closer spacing */
         display: inline-block; /* Ensure the line is treated as a block element */
     }
 
     /* Paragraph Styling */
     header.masthead p {
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 300; /* Use lighter weight for paragraphs */
         font-size: 1.25rem;
-        color: rgba(255, 255, 255, 0.9);
-        margin-top: 1.5rem; /* Add spacing above the paragraph */
-        margin-bottom: 2rem;
-        max-width: 600px;
-        text-align: center; /* Ensure alignment */
+        line-height: 1.6;
+        text-align: center;
+        margin: 0 auto 1.5rem;
+        max-width: 800px; /* Adjust for readability */
     }
 
     /* Button Styling */
@@ -61,100 +68,7 @@ header.masthead {
         }
 
 /* Button */
-button {
-    position: relative;
-    padding: 15px 45px;
-    background: #fec195;
-    font-size: 17px;
-    font-weight: 500;
-    color: #181818;
-    cursor: pointer;
-    border: 1px solid #fec195;
-    border-radius: 8px;
-    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2));
-}
 
-    /* Button Hover State */
-    button:hover {
-        border: 1px solid #f3b182;
-        background: linear-gradient(85deg, #fec195, #fcc196, #fabd92, #fac097, #fac39c);
-        animation: wind 2s ease-in-out infinite;
-    }
-
-/* Icon 1 Animation */
-.icon-1 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 25px;
-    transform-origin: 0 0;
-    animation: slay-1 3s cubic-bezier(0.52, 0, 0.58, 1) infinite;
-    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.3));
-}
-
-@keyframes slay-1 {
-    0% {
-        transform: rotate(10deg);
-    }
-
-    50% {
-        transform: rotate(-5deg);
-    }
-
-    100% {
-        transform: rotate(10deg);
-    }
-}
-
-/* Icon 2 Animation */
-.icon-2 {
-    position: absolute;
-    top: 0;
-    left: 25px;
-    width: 12px;
-    transform-origin: 50% 0;
-    animation: slay-2 3s cubic-bezier(0.52, 0, 0.58, 1) infinite;
-    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
-}
-
-@keyframes slay-2 {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    50% {
-        transform: rotate(15deg);
-    }
-
-    100% {
-        transform: rotate(0);
-    }
-}
-
-/* Icon 3 Animation */
-.icon-3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 18px;
-    transform-origin: 50% 0;
-    animation: slay-3 2s cubic-bezier(0.52, 0, 0.58, 1) infinite;
-    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
-}
-
-@keyframes slay-3 {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    50% {
-        transform: rotate(-5deg);
-    }
-
-    100% {
-        transform: rotate(0);
-    }
-}
 /* Navigation Bar Styling */
 nav.navbar {
     background-color: rgba(92, 77, 66, 0.8); /* Brownish transparent background */
