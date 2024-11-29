@@ -30,9 +30,9 @@ header.masthead {
     }
 
     header.masthead .divider {
-        width: 50px;
+        width: 100px;
         height: 4px;
-        background-color: #f4623a;
+        
         margin: 1.5rem auto; /* Adjust the top margin */
         margin-top: 0.5rem; /* Reduce this value for closer spacing */
         display: inline-block; /* Ensure the line is treated as a block element */

@@ -6,3 +6,7 @@ window.addEventListener('scroll', function () {
         nav.classList.remove('scrolled');
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("home.js loaded successfully!");
+});
