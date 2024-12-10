@@ -17,6 +17,7 @@ header.masthead {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    letter-spacing: 0.05em;
 }
 
     /* Title Styling */
@@ -32,7 +33,6 @@ header.masthead {
     header.masthead .divider {
         width: 100px;
         height: 4px;
-        
         margin: 1.5rem auto; /* Adjust the top margin */
         margin-top: 0.5rem; /* Reduce this value for closer spacing */
         display: inline-block; /* Ensure the line is treated as a block element */
@@ -68,6 +68,56 @@ header.masthead {
         }
 
 /* Button */
+.btn {
+    position: relative;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 6em;
+    transition: all 0.2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: white;
+    background-color: #f4623a;
+    font-weight: 1000; /* Maximum font weight */
+}
+
+    .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        font-weight: 900; /* Makes the text bolder */
+        color: white; /* Ensure text remains white */
+    }
+
+    .btn:active {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all 0.4s;
+        background-color: #f4623a;
+    }
+
+    .btn:hover::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0; /* Ensures the hover effect works smoothly */
+    }
+
+
 
 /* Navigation Bar Styling */
 nav.navbar {
@@ -75,6 +125,7 @@ nav.navbar {
     color: white; /* White text color */
     padding: 1rem;
     transition: background-color 0.3s ease;
+    padding-left: 6rem;
 }
 
     /* Navigation Links Styling */
@@ -84,6 +135,7 @@ nav.navbar {
         text-transform: uppercase;
         padding: 0.5rem 1rem;
         transition: color 0.3s ease;
+
     }
 
         nav.navbar .nav-link:hover {
