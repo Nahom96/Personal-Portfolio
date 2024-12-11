@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="~/css/homeStyle.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-
+    <link rel="stylesheet" href="/css/about.css" asp-append-version="true"/>
 </head>
 <body id="page-top">
     <nav class="navbar navbar-expand-sm fixed-top navbar-dark box-shadow mb-3" id="mainNav">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Nahom Araya</a>
+            <a class="name" href="#">Nahom Araya</a>
             <button class="navbar-toggler"
                     type="button"
                     data-bs-toggle="collapse"
@@ -28,7 +28,7 @@
             </button>
             <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#aboutSection">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Experience</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
@@ -45,16 +45,15 @@
                 </div>
                 <div class="col-lg-8 align-self-baseline">
                     <p class="text-white-75 mb-5">Welcome to my portfolio website! Here, you'll find insights into who I am, my skills, ongoing learning journey, projects, and professional experience. Thank you for visiting, Enjoy! 😊</p>
-                    <button class="btn">Get Started</button>
+                    <button class="btn" id="getStartedBtn">Get Started</button>
                 </div>
             </div>
         </div>
     </header>
 
-    <section id="about">
+    <section id="aboutSection">
         <div class="container text-center">
-            <h2>About Me</h2>
-            <p>Welcome crodie</p>
+            <h1 id="header">About Me</h1>
         </div>
     </section>
 

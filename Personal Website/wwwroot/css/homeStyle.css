@@ -10,7 +10,7 @@ html {
 
 header.masthead {
     height: 100vh;
-    padding-top: 10rem;
+    padding-top: 11.5rem;
     padding-bottom: calc(10rem - 4.5rem);
     background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url('/img/bg-masthead.jpg');
     background-position: center;
@@ -27,7 +27,7 @@ header.masthead {
 
     /* Title Styling */
     header.masthead h1 {
-        font-family: 'Nunito Sans', sans-serif;
+        font-family: 'PT Serif', PT Serif;
         font-weight: 700; /* Use a heavier weight for the title */
         font-size: 3.5rem;
         line-height: 1.2;
@@ -45,7 +45,7 @@ header.masthead {
 
     /* Paragraph Styling */
     header.masthead p {
-        font-family: 'Nunito Sans', sans-serif;
+        font-family: 'PT Serif', PT Serif;
         font-weight: 300; /* Use lighter weight for paragraphs */
         font-size: 1.25rem;
         line-height: 1.6;
@@ -123,7 +123,6 @@ header.masthead {
     }
 
 
-
 /* Navigation Bar Styling */
 nav.navbar {
     background-color: rgba(92, 77, 66, 0.8); /* Brownish transparent background */
@@ -141,11 +140,12 @@ nav.navbar {
         font-weight: bold;
         padding: 0.5rem 1rem;
         transition: color 0.3s ease;
+        text-decoration: none; /* Remove underline */
     }
 
         nav.navbar .nav-link:hover {
             color: #f4623a; /* Bright orange on hover */
-            text-decoration: none; /* Remove underline */
+            text-decoration: none; /* Ensure no underline on hover */
         }
 
 /* Default Transparent Nav */
@@ -158,50 +158,111 @@ nav.navbar {
     /* Scrolled Nav */
     #mainNav.scrolled {
         background-color: white; /* White background when scrolled */
-        color: black; /* Navy blue font color when scrolled */
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
-    }
 
-    nav.navbar.scrolled .nav-link {
-        color: black; /* Navy blue font color for links when scrolled */
     }
-
-    nav.navbar.scrolled .navbar-brand {
-        color: black; /* Navy blue font color for brand when scrolled */
-    }
-    /* Navigation Links Styling */
-    #mainNav .nav-link {
-        color: white; /* Default link color */
-        font-weight: bold;
-        padding: 0.5rem 1rem;
-        margin: 0 10px; /* Add horizontal space between links */
-        position: relative; /* Needed for pseudo-element positioning */
-        text-decoration: none; /* Remove default underline */
-        transition: color 0.3s ease;
-    }
-
-        #mainNav .nav-link::after {
-            content: ""; /* Creates the underline */
-            position: absolute;
-            bottom: 0; /* Position it below the text */
-            left: 50%; /* Start at the middle */
-            height: 2px; /* Thickness of the underline */
-            width: 0; /* Initially hidden */
-            background-color: #f4623a; /* Orange color */
-            transition: width 0.4s ease, left 0.4s ease; /* Smooth animation */
+        #mainNav.scrolled .nav-link {
+            color: black; /* Black text color for links when scrolled */
         }
 
-        #mainNav .nav-link:hover {
-            color: #f4623a; /* Change color on hover */
-        }
-
-            #mainNav .nav-link:hover::after {
-                width: 100%; /* Expand underline to full width */
-                left: 0; /* Move left to cover the entire width */
+            /* Hover Effect for .nav-link in Scrolled State */
+            #mainNav.scrolled .nav-link:hover {
+                color: #f4623a; /* Bright orange on hover */
             }
 
-        /* When hover is removed */
-        #mainNav .nav-link:not(:hover)::after {
-            width: 0; /* Reset underline */
-            left: 50%; /* Back to the middle */
+/* Remove hover lines */
+#mainNav .nav-link {
+    color: white; /* Default link color */
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    margin: 0 10px; /* Add horizontal space between links */
+    position: relative; /* Needed for positioning */
+    text-decoration: none; /* No underline */
+    transition: color 0.3s ease;
+}
+
+    #mainNav .nav-link:hover {
+        color: #f4623a; /* Change color on hover */
+        text-decoration: none; /* No underline on hover */
+    }
+
+a.name {
+    color: white; /* Default color */
+    font-size:22px;
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+    /* Hover Effect for .name class */
+    a.name:hover {
+        color: #f4623a; /* Change color to orange when hovered */
+    }
+
+#mainNav.scrolled a.name {
+    color: black; /* Black font color when scrolled */
+}
+
+    /* Hover Effect for .name in Scrolled State */
+    #mainNav.scrolled a.name:hover {
+        color: #f4623a; /* Orange color on hover */
+    }
+
+
+@media (max-width: 900px) {
+    #mainNav {
+        background-color: white !important; /* White background */
+    }
+
+    /* Navbar Toggler Icon */
+    .navbar-toggler-icon {
+        background-color: transparent !important; /* Make the background transparent */
+        border: 1px solid grey; /* Set border color to grey */
+        width: 30px; /* Width of the toggler icon */
+        height: 30px; /* Height of the toggler icon */
+        border-radius: 5px; /* Round the edges */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5px; /* Add padding for spacing between the lines */
+    }
+
+        /* Define the three lines */
+        .navbar-toggler-icon::before,
+        .navbar-toggler-icon::after,
+        .navbar-toggler-icon span {
+            content: '';
+            background-color: grey; /* Set the lines to grey */
+            width: 20px; /* Width of the lines */
+            height: 3px; /* Height of the lines */
+            border-radius: 3px; /* Slightly round the edges of the lines */
         }
+
+        /* Adjust the position of the middle line */
+        .navbar-toggler-icon span {
+            width: 18px; /* Slightly smaller width for the middle line */
+        }
+
+    /* Navbar links color when screen is resized */
+    #mainNav .nav-link {
+        color: black !important; /* Black text */
+    }
+
+    /* Hover effect for nav links when screen is resized */
+    #mainNav .navbar-collapse .nav-link:hover {
+        color: #f4623a !important; /* Orange color on hover */
+    }
+
+    /* Target the <a> with class "name" to make it black as well */
+    #mainNav .name {
+        color: black !important; /* Black color for the brand link when the screen is resized */
+    }
+
+    /* Change the brand color when scrolled */
+    #mainNav.scrolled a.name {
+        color: black !important; /* Black font color when scrolled */
+    }
+}
+
+
+
