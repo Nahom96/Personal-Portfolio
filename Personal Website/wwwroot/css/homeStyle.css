@@ -1,8 +1,13 @@
 ﻿/* Main Page Background and Text Styles */
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;500;600;700&display=swap");
+
 body {
     font-family: 'Nunito Sans', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
+
 header.masthead {
     height: 100vh;
     padding-top: 10rem;
@@ -125,17 +130,17 @@ nav.navbar {
     color: white; /* White text color */
     padding: 1rem;
     transition: background-color 0.3s ease;
-    padding-left: 6rem;
+    padding-left: 4.5rem;
+    font-weight: bolder;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
     /* Navigation Links Styling */
     nav.navbar .nav-link {
         color: white; /* White text for links */
         font-weight: bold;
-        text-transform: uppercase;
         padding: 0.5rem 1rem;
         transition: color 0.3s ease;
-
     }
 
         nav.navbar .nav-link:hover {
@@ -143,28 +148,31 @@ nav.navbar {
             text-decoration: none; /* Remove underline */
         }
 
-    /* Optional: Add a box shadow for better contrast */
-    nav.navbar {
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    }
-    /* Default Transparent Nav */
-    #mainNav {
-        background-color: transparent; /* Transparent background */
-        transition: background-color 0.3s ease, box-shadow 0.3s ease;
-        box-shadow: none; /* No shadow initially */
-    }
+/* Default Transparent Nav */
+#mainNav {
+    background-color: transparent; /* Transparent background */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: none; /* No shadow initially */
+}
 
     /* Scrolled Nav */
     #mainNav.scrolled {
-        background-color: rgba(92, 77, 66, 0.8); /* Semi-transparent brown */
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow when scrolled */
+        background-color: white; /* White background when scrolled */
+        color: black; /* Navy blue font color when scrolled */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
     }
 
+    nav.navbar.scrolled .nav-link {
+        color: black; /* Navy blue font color for links when scrolled */
+    }
+
+    nav.navbar.scrolled .navbar-brand {
+        color: black; /* Navy blue font color for brand when scrolled */
+    }
     /* Navigation Links Styling */
     #mainNav .nav-link {
         color: white; /* Default link color */
         font-weight: bold;
-        text-transform: uppercase;
         padding: 0.5rem 1rem;
         margin: 0 10px; /* Add horizontal space between links */
         position: relative; /* Needed for pseudo-element positioning */
@@ -197,4 +205,3 @@ nav.navbar {
             width: 0; /* Reset underline */
             left: 50%; /* Back to the middle */
         }
-
