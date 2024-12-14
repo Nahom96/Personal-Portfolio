@@ -1,10 +1,38 @@
 body {
     background-color: #f4623a;
     font-family: 'PT Serif ', PT Serif;
+    color: white;
 }
 #header{
-    color:white;
+    padding:30px;
     font-weight:bolder;
     font-size:40px;
-    padding-top:80px;
+    padding-top:30px;
+}
+.about {
+    width: 40%; /* Adjust the width as per your preference */
+    margin-left: 5%; /* Adds space from the left edge of the screen */
+    padding: 20px; /* Adds inner spacing within the container */
+    border: 1px solid #ccc; /* Optional: Adds a border to make the container visible */
+    border-radius: 10px; /* Optional: Rounds the corners */
+    background-color: #f9f9f9; /* Optional: Adds a background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for a modern look */
+}
+
+    .about h3 {
+        margin-bottom: 10px; /* Space below the header */
+        color: #333; /* Text color */
+    }
+
+    .about p {
+        margin: 0; /* Removes default margins */
+        line-height: 1.6; /* Adjust line spacing for better readability */
+        color: #555; /* Text color */
+    }
+
+@media (max-width: 768px) {
+    .about {
+        width: 90%; /* Make it wider for smaller screens */
+        margin-left: 5%; /* Center it on small screens */
+    }
 }

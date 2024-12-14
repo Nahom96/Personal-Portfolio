@@ -208,7 +208,7 @@ a.name {
     }
 
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     #mainNav {
         background-color: white !important; /* White background */
     }
@@ -264,5 +264,14 @@ a.name {
     }
 }
 
+/* Offset sections for the fixed navbar */
+section {
+    scroll-margin-top: 50px; /* Adjust based on the navbar height */
+}
 
+/* Optional: Add padding to improve the layout visually */
+section {
+    padding-top: 20px; /* Same value as the navbar height for better appearance */
+    padding-bottom:20px;
+}
 
