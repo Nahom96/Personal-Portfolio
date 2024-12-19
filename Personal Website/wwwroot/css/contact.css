@@ -1,0 +1,204 @@
+﻿#ContactSection{
+    background-color:white;
+}
+#contact-header {
+    color: black;
+    font-size: 40px;
+    padding-top: 80px;
+    position: relative;
+    text-align: center; /* Ensure the heading and line are centered */
+}
+
+    #contact-header::after {
+        content: "";
+        display: block;
+        width: 50px; /* Adjust the width as needed */
+        height: 3px; /* Thickness of the line */
+        background-color: #FF8C00; /* Dark orange */
+        margin: 10px auto 0; /* Space below the heading */
+        position: relative;
+        top: 10px; /* Push the line further down */
+    }
+
+
+
+.buttons-container {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+    margin-top:-240px;
+}
+
+/* Button styles for LinkedIn */
+.Btn {
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    position: relative;
+    background: #0274b3;
+}
+
+.svgIcon {
+    transition-duration: 0.3s;
+}
+
+.svgIcon path {
+    fill: white;
+}
+
+.text {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    width: 120px;
+    font-weight: 600;
+    opacity: 0;
+    transition-duration: 0.4s;
+}
+
+.Btn:hover {
+    width: 110px;
+    transition-duration: 0.4s;
+    border-radius: 30px;
+}
+
+.Btn:hover .text {
+    opacity: 1;
+    transition-duration: 0.4s;
+}
+
+.Btn:hover .svgIcon {
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+/* Button styles for Github */
+.Btn-github {
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .4s;
+    cursor: pointer;
+    position: relative;
+    background-color: rgb(31, 31, 31);
+    overflow: hidden;
+}
+
+.svgIcon {
+    transition-duration: .3s;
+}
+
+.svgIcon path {
+    fill: white;
+}
+
+.text-github {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    width: 120px;
+    font-weight: 600;
+    opacity: 0;
+    transition-duration: .4s;
+}
+
+.Btn-github:hover {
+    width: 110px;
+    transition-duration: .4s;
+    border-radius: 30px;
+}
+
+.Btn-github:hover .text-github {
+    opacity: 1;
+    transition-duration: .4s;
+}
+
+.Btn-github:hover .svgIcon {
+    opacity: 0;
+    transition-duration: .3s;
+}
+
+/* Center the form container in the middle of the page */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style the form itself */
+.form {
+    width: 400px; /* Form width */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Style for labels */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Style for input fields */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* Style for message textarea (larger height) */
+.textarea-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    resize: vertical; /* Allows resizing the message box */
+}
+
+/* Style for the submit button */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+    /* Hover effect for submit button */
+    .submit-btn:hover {
+        background-color: #45a049;
+    }
+/* Change the border color to light orange on focus */
+.form-control:focus {
+    border-color: #ffa500; /* Light orange color */
+    box-shadow: 0 0 0 0.25rem rgba(255, 165, 0, 0.25); /* Optional, adds a soft orange glow */
+}
+#ContactForm{
+    margin-top:-220px;
+}
