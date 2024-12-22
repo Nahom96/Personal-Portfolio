@@ -14,15 +14,22 @@ namespace Personal_Website.Controllers
 		{
 			if (!ModelState.IsValid)
 			{
-				// Return validation errors as JSON response
-				var errors = ModelState.Values.SelectMany(v => v.Errors)
-											   .Select(e => e.ErrorMessage)
-											   .ToList();
-				return Json(new { success = false, errors });
+				return BadRequest("Invalid form data. Please fill out all required fields correctly.");
 			}
 
-			// If everything is valid, return a success response
-			return Json(new { success = true, message = "Form submitted successfully!" });
+			try
+			{
+				// Send the email
+				SendEmail(form);
+
+				// Return success status
+				return Ok("Form submitted successfully!");
+			}
+			catch (Exception)
+			{
+				// Log exception (replace with proper logging in production)
+				return StatusCode(500, "An error occurred while sending your message. Please try again later.");
+			}
 		}
 
 		private void SendEmail(ContactForm form)
