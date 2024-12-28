@@ -19,15 +19,12 @@ namespace Personal_Website.Controllers
 
 			try
 			{
-				// Send the email
 				SendEmail(form);
 
-				// Return success status
 				return Ok("Form submitted successfully!");
 			}
 			catch (Exception)
 			{
-				// Log exception (replace with proper logging in production)
 				return StatusCode(500, "An error occurred while sending your message. Please try again later.");
 			}
 		}
@@ -37,12 +34,15 @@ namespace Personal_Website.Controllers
 			var smtpClient = new SmtpClient("smtp.gmail.com")
 			{
 				Port = 587,
-				Credentials = new NetworkCredential("Arayanahom475@gmail.com", "tsch chta tsom ccgt"),
+				Credentials = new NetworkCredential(
+					Environment.GetEnvironmentVariable("GMAIL_USER"),
+					Environment.GetEnvironmentVariable("GMAIL_PASSWORD")
+				),
 				EnableSsl = true,
 			};
 			var mailMessage = new MailMessage
 			{
-				From = new MailAddress(form.Email),  
+				From = new MailAddress(form.Email),
 				Subject = "New Contact Form Submission",
 				Body = $"Name: {form.Name}\nEmail: {form.Email}\nPhone: {form.Phone}\nMessage: {form.Message}",
 				IsBodyHtml = false,
@@ -51,5 +51,6 @@ namespace Personal_Website.Controllers
 
 			smtpClient.Send(mailMessage);
 		}
+
 	}
 }

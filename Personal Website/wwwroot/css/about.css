@@ -1,4 +1,4 @@
-/* General Styling for About Section */
+/* About Section */
 #aboutSection {
     padding: 50px;
     background-color: #f4623a;
@@ -16,22 +16,22 @@
 
 .about-text {
     display: flex;
-    justify-content: center; /* Horizontally centers the text */
-    align-items: center; /* Vertically centers the text */
-    text-align: center; /* Ensure text inside is centered */
-    width: 100%; /* Ensure the container takes the full width */
-    max-width: 900px; /* Set the maximum width of the container */
-    margin: 0 auto; /* Center the container horizontally */
+    justify-content: center;  
+    align-items: center;  
+    text-align: center;  
+    width: 100%; 
+    max-width: 900px;  
+    margin: 0 auto;
 }
 
 /* Button styling */
 #cvButtonContainer {
     display: flex;
-    justify-content: center; /* Horizontally centers the button */
-    align-items: center; /* Vertically centers the button */
+    justify-content: center;  
+    align-items: center;  
     padding:20px;
 }
-#cvBtn {
+.btn-cv {
     position: relative;
     font-size: 17px;
     text-transform: uppercase;
@@ -45,9 +45,9 @@
     font-family: inherit;
     color: black;
     background-color: white;
-    font-weight: 600; /* Maximum font weight */
+    font-weight: 600; 
 }
 
-    #cvBtn:hover {
-        filter: brightness(0.8); /* Dim the button */
+    .btn-cv:hover {
+        filter: brightness(0.8);
     }

@@ -6,28 +6,28 @@
     font-size: 40px;
     padding-top: 80px;
     position: relative;
-    text-align: center; /* Ensure the heading and line are centered */
+    text-align: center;  
 }
 
     #contact-header::after {
         content: "";
         display: block;
-        width: 50px; /* Adjust the width as needed */
-        height: 3px; /* Thickness of the line */
-        background-color: #FF8C00; /* Dark orange */
-        margin: 10px auto 0; /* Space below the heading */
+        width: 50px;  
+        height: 3px;  
+        background-color: #FF8C00;  
+        margin: 10px auto 0;  
         position: relative;
-        top: 10px; /* Push the line further down */
+        top: 10px;  
     }
 
 
 
 .buttons-container {
     display: flex;
-    justify-content: center; /* Horizontally center */
-    align-items: center; /* Vertically center */
-    height: 100vh; /* Full viewport height */
-    width: 100%; /* Full width */
+    justify-content: center;  
+    align-items: center;  
+    height: 100vh;  
+    width: 100%;  
     margin-top:-240px;
 }
 
@@ -136,9 +136,9 @@
     height: 100vh;
 }
 
-/* Style the form itself */
+/* Style the form */
 .form {
-    width: 400px; /* Form width */
+    width: 400px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -153,7 +153,6 @@ form label {
     color: #333;
 }
 
-/* Style for input fields */
 .input-field {
     width: 100%;
     padding: 10px;
@@ -161,10 +160,9 @@ form label {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    box-sizing: border-box; 
 }
 
-/* Style for message textarea (larger height) */
 .textarea-field {
     width: 100%;
     padding: 10px;
@@ -173,7 +171,7 @@ form label {
     border-radius: 5px;
     font-size: 16px;
     box-sizing: border-box;
-    resize: vertical; /* Allows resizing the message box */
+    resize: vertical;  
 }
 
 /* Style for the submit button */
@@ -190,14 +188,12 @@ form label {
     transition: background-color 0.3s ease;
 }
 
-    /* Hover effect for submit button */
     .submit-btn:hover {
         background-color: #45a049;
     }
-/* Change the border color to light orange on focus */
 .form-control:focus {
-    border-color: #ffa500; /* Light orange color */
-    box-shadow: 0 0 0 0.25rem rgba(255, 165, 0, 0.25); /* Optional, adds a soft orange glow */
+    border-color: #ffa500; 
+    box-shadow: 0 0 0 0.25rem rgba(255, 165, 0, 0.25);  
 }
 #ContactForm{
     margin-top:-220px;
@@ -210,7 +206,7 @@ form label {
     padding: 15px;
     border-radius: 5px;
     font-size: 16px;
-    z-index: 9999; /* Increase z-index to ensure it's on top of other elements */
+    z-index: 9999;  
     animation: fadeIn 0.5s, fadeOut 0.5s 4.5s;
 }
 

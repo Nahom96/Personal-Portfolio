@@ -1,5 +1,4 @@
-﻿/* Remove padding and margin from container and row */
-.container-fluid {
+﻿.container-fluid {
     padding: 0;
 }
 
@@ -7,14 +6,12 @@
     margin: 0;
 }
 
-/* Portfolio box styling */
 .portfolio-box {
     position: relative;
     overflow: hidden;
     display: block;
 }
 
-    /* Images fill the container */
     .portfolio-box img {
         width: 100%;
         height: auto;
@@ -22,12 +19,10 @@
         transition: filter 0.3s ease;
     }
 
-    /* Dim the image on hover */
     .portfolio-box:hover img {
         filter: brightness(20%);
     }
 
-/* Caption container */
 .portfolio-box-caption {
     position: absolute;
     top: 50%;
@@ -43,12 +38,10 @@
     justify-content: center;
 }
 
-/* Show caption on hover */
 .portfolio-box:hover .portfolio-box-caption {
     opacity: 1;
 }
 
-/* Project name style */
 .project-name {
     font-size: 1.5rem;
     font-weight: bold;
@@ -57,53 +50,48 @@
 
 .project-btn {
     position: relative;
-    font-size: 16px; /* Text size */
+    font-size: 16px;
     text-decoration: none;
-    display: inline-flex; /* Use flexbox for centering */
-    justify-content: center; /* Horizontally center the text */
-    align-items: center; /* Vertically center the text */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
-    border-radius: 6em; /* Rounded edges */
-    transition: all 0.2s ease-in-out; /* Smooth transition */
+    border-radius: 6em;
+    transition: all 0.2s ease-in-out;
     border: none;
     font-family: inherit;
-    font-weight: 700; /* Balanced font weight */
+    font-weight: 700;
     background-color: white;
     color: black;
-    height: 40px; /* Compact height */
-    width: 120px; /* Compact width */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    height: 40px;
+    width: 120px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
     .project-btn:hover {
-        filter: brightness(0.9); /* Slight dimming on hover */
-        transform: scale(1.05); /* Slight enlargement on hover */
-        color: black; /* Ensure consistent text color */
+        filter: brightness(0.9);
+        transform: scale(1.05);
+        color: black;
     }
-
-
-
-
 
 #github {
     background-color: #292929;
 }
+
 #gith2 {
     padding-top: 110px;
     text-align: center;
     font-size: 30px;
 }
-/* Center the button container */
+
 .button-container {
     display: flex;
-    justify-content: center; /* Horizontally center */
-    align-items: center; /* Vertically center */
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     padding-bottom: 100px;
-
 }
 
-/* Button styling */
 #gitbutton {
     position: relative;
     font-size: 22px;
@@ -115,14 +103,14 @@
     transition: all 0.2s;
     border: none;
     font-family: inherit;
-    font-weight: 1000; /* Maximum font weight */
+    font-weight: 1000;
     background-color: white;
     color: black;
     width: 270px;
-    text-align: center; /* Horizontally center the text */
-    line-height: 1.5; /* Adjust to vertically center the text */
+    text-align: center;
+    line-height: 1.5;
 }
 
     #gitbutton:hover {
-        filter: brightness(0.8); /* Dim the button */
+        filter: brightness(0.8);
     }

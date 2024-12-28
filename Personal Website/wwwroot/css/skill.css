@@ -6,43 +6,43 @@
     font-size: 40px;
     padding-top: 40px;
     position: relative;
-    text-align: center; /* Ensure the heading and line are centered */
+    text-align: center;  
 }
 
     #skill-header::after {
         content: "";
         display: block;
-        width: 50px; /* Adjust the width as needed */
-        height: 3px; /* Thickness of the line */
-        background-color: #FF8C00; /* Dark orange */
-        margin: 10px auto 0; /* Space below the heading */
+        width: 50px;  
+        height: 3px;  
+        background-color: #FF8C00;  
+        margin: 10px auto 0; 
         position: relative;
-        top: 10px; /* Push the line further down */
+        top: 10px;  
     }
 
 .skill-icons-row {
     display: flex;
-    justify-content: space-around; /* Evenly distribute space around the images */
-    flex-wrap: wrap; /* Allow the icons to wrap to the next line if needed */
-    gap: 30px; /* Increase space between items */
-    padding-top: 40px; /* Space from the top content */
+    justify-content: space-around;  
+    flex-wrap: wrap;  
+    gap: 30px;  
+    padding-top: 40px;  
 }
 
 .skill-item {
-    text-align: center; /* Align text under the image */
+    text-align: center;  
 }
 
 .skill-icons-row img {
-    width: 70px; /* Smaller width for the images */
-    height: 70px; /* Smaller height for the images */
-    margin: 15px; /* Space around each image */
+    width: 70px; 
+    height: 70px;  
+    margin: 15px; 
 }
 
 .skill-item p {
-    font-size: 18px; /* Smaller text size */
-    margin-top: 8px; /* Space between image and text */
-    color: #808080; /* Gray color */
-    font-weight: 1000; /* Increased font weight without being too bold */
+    font-size: 18px;  
+    margin-top: 8px; 
+    color: #808080;  
+    font-weight: 1000;  
 }
 #gith2{
     color:white;
