@@ -1,8 +1,8 @@
 /* General Styling for About Section */
 #aboutSection {
     padding: 50px;
-    background-color: #f0523a;
-    color: #fff;
+    background-color: #f4623a;
+    color: white;
     font-family: 'Arial', sans-serif;
 }
 
@@ -14,131 +14,40 @@
     font-weight: bold;
 }
 
-/* General Styling for About Section */
-#aboutSection {
-    padding: 50px;
-    background-color: #f0523a;
-    color: #fff;
-    font-family: 'Arial', sans-serif;
-}
-
-/* Header */
-#header {
-    text-align: center;
-    font-size: 2.8rem;
-    margin-bottom: 40px;
-    font-weight: bold;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-}
-
-.timeline-section {
-    min-height: 100vh;
-    padding: 100px 15px;
-}
-
-.timeline-items {
-    max-width: 1000px;
-    margin: auto;
+.about-text {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center; /* Horizontally centers the text */
+    align-items: center; /* Vertically centers the text */
+    text-align: center; /* Ensure text inside is centered */
+    width: 100%; /* Ensure the container takes the full width */
+    max-width: 900px; /* Set the maximum width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Button styling */
+#cvButtonContainer {
+    display: flex;
+    justify-content: center; /* Horizontally centers the button */
+    align-items: center; /* Vertically centers the button */
+    padding:20px;
+}
+#cvBtn {
     position: relative;
-}
-
-    .timeline-items::before {
-        content: '';
-        position: absolute;
-        width: 2px;
-        height: 100%;
-        background-color: #2f363e;
-        left: calc(50% - 1px);
-    }
-
-.timeline-item {
-    margin-bottom: 40px;
-    width: 100%;
-    position: relative;
-}
-
-    .timeline-item:last-child {
-        margin-bottom: 0;
-    }
-
-    .timeline-item:nth-child(odd) {
-        padding-right: calc(50% + 30px);
-        text-align: right;
-    }
-
-    .timeline-item:nth-child(even) {
-        padding-left: calc(50% + 30px);
-    }
-
-.timeline-dot {
-    height: 16px;
-    width: 16px;
-    background-color: black;
-    position: absolute;
-    left: calc(50% - 8px);
-    border-radius: 50%;
-    top: 10px;
-}
-
-.timeline-date {
-    font-size: 18px;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 6em;
+    transition: all 0.2s;
+    border: none;
+    font-family: inherit;
     color: black;
-    font-weight:bold;
-    margin: 6px 0 15px;
+    background-color: white;
+    font-weight: 600; /* Maximum font weight */
 }
 
-.timeline-content {
-    background-color: #ffffff; /* Removed black background, now white */
-    padding: 30px;
-    border-radius: 5px;
-}
-
-    .timeline-content h3 {
-        font-size: 20px;
-        color: #333333; /* Darker text color for better contrast */
-        margin: 0 0 10px;
-        text-transform: capitalize;
-        font-weight: 500;
+    #cvBtn:hover {
+        filter: brightness(0.8); /* Dim the button */
     }
-
-    .timeline-content p {
-        color: #777777; /* Lighter gray text */
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 22px;
-    }
-
-/* Responsive Design */
-@media (max-width: 767px) {
-    .timeline-items::before {
-        left: 7px;
-    }
-
-    .timeline-item:nth-child(odd) {
-        padding-right: 0;
-        text-align: left;
-    }
-
-    .timeline-item:nth-child(odd),
-    .timeline-item:nth-child(even) {
-        padding-left: 37px;
-    }
-
-    .timeline-dot {
-        left: 0;
-    }
-}
-

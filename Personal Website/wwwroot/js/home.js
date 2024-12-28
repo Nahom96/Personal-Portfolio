@@ -25,3 +25,5 @@ document.getElementById("getStartedBtn").addEventListener("click", function () {
     // Scroll to the about section
     document.getElementById("aboutSection").scrollIntoView({ behavior: "smooth" });
 });
+
+c
