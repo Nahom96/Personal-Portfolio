@@ -1,18 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
+    <!-- Target framework for your application -->
     <TargetFramework>net8.0</TargetFramework>
+
+    <!-- Enable nullable reference types -->
     <Nullable>enable</Nullable>
+
+    <!-- Enable implicit usings -->
     <ImplicitUsings>enable</ImplicitUsings>
+
+    <!-- Root namespace for your project -->
     <RootNamespace>Personal_Website</RootNamespace>
+
+    <!-- User secrets for local development -->
     <UserSecretsId>b89a84b2-c255-4327-89f7-d8efc6e1002f</UserSecretsId>
-    <DockerDefaultTargetOS>Windows</DockerDefaultTargetOS>
-    <DockerfileContext>.</DockerfileContext>
   </PropertyGroup>
 
   <ItemGroup>
+    <!-- Add any necessary NuGet packages here -->
     <PackageReference Include="DotNetEnv" Version="3.1.1" />
-    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
   </ItemGroup>
 
 </Project>
+
