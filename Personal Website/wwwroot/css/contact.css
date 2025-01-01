@@ -1,34 +1,36 @@
-﻿#ContactSection{
-    background-color:white;
+﻿﻿#ContactSection {
+    background-color: white;
 }
+
 #contact-header {
     color: black;
     font-size: 40px;
     padding-top: 80px;
     position: relative;
-    text-align: center;  
+    text-align: center;
 }
 
     #contact-header::after {
         content: "";
         display: block;
-        width: 50px;  
-        height: 3px;  
-        background-color: #FF8C00;  
-        margin: 10px auto 0;  
+        width: 80px;
+        height: 3px;
+        background-color: #FF8C00;
+        margin: 5px auto 0;
         position: relative;
-        top: 10px;  
+        top: 10px;
     }
 
 
 
 .buttons-container {
     display: flex;
-    justify-content: center;  
-    align-items: center;  
-    height: 100vh;  
-    width: 100%;  
-    margin-top:-240px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin-top: -240px;
+
 }
 
 /* Button styles for LinkedIn */
@@ -38,6 +40,7 @@
     width: 45px;
     height: 45px;
     display: flex;
+    margin-top: -25px;
     align-items: center;
     justify-content: center;
     transition-duration: 0.4s;
@@ -50,16 +53,19 @@
     transition-duration: 0.3s;
 }
 
-.svgIcon path {
-    fill: white;
-}
+    .svgIcon path {
+        fill: white;
+    }
 
 .text {
     position: absolute;
     color: rgb(255, 255, 255);
-    width: 120px;
     font-weight: 600;
     opacity: 0;
+    width: 120px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
     transition-duration: 0.4s;
 }
 
@@ -69,21 +75,22 @@
     border-radius: 30px;
 }
 
-.Btn:hover .text {
-    opacity: 1;
-    transition-duration: 0.4s;
-}
+    .Btn:hover .text {
+        opacity: 1;
+        transition-duration: 0.4s;
+    }
 
-.Btn:hover .svgIcon {
-    opacity: 0;
-    transition-duration: 0.3s;
-}
+    .Btn:hover .svgIcon {
+        opacity: 0;
+        transition-duration: 0.3s;
+    }
 
 /* Button styles for Github */
 .Btn-github {
     border: none;
     border-radius: 50%;
     width: 45px;
+    margin-top: -25px;
     height: 45px;
     display: flex;
     align-items: center;
@@ -99,17 +106,20 @@
     transition-duration: .3s;
 }
 
-.svgIcon path {
-    fill: white;
-}
+    .svgIcon path {
+        fill: white;
+    }
 
 .text-github {
     position: absolute;
     color: rgb(255, 255, 255);
-    width: 120px;
     font-weight: 600;
     opacity: 0;
-    transition-duration: .4s;
+    width: 120px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    transition-duration: 0.4s;
 }
 
 .Btn-github:hover {
@@ -118,33 +128,35 @@
     border-radius: 30px;
 }
 
-.Btn-github:hover .text-github {
-    opacity: 1;
-    transition-duration: .4s;
-}
+    .Btn-github:hover .text-github {
+        opacity: 1;
+        transition-duration: .4s;
+    }
 
-.Btn-github:hover .svgIcon {
-    opacity: 0;
-    transition-duration: .3s;
-}
+    .Btn-github:hover .svgIcon {
+        opacity: 0;
+        transition-duration: .3s;
+    }
 
-/* Center the form container in the middle of the page */
+
 .form-container {
+    position: absolute;
+    top: 100px; /* Adjust to a suitable position from top */
+    left: 50%;
+    transform: translateX(-50%); /* Center the form horizontally */
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 /* Style the form */
 .form {
     width: 400px;
-    padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: #f9f9f9;
 }
-
 /* Style for labels */
 form label {
     display: block;
@@ -160,7 +172,7 @@ form label {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .textarea-field {
@@ -171,7 +183,7 @@ form label {
     border-radius: 5px;
     font-size: 16px;
     box-sizing: border-box;
-    resize: vertical;  
+    resize: vertical;
 }
 
 /* Style for the submit button */
@@ -191,12 +203,14 @@ form label {
     .submit-btn:hover {
         background-color: #45a049;
     }
+
 .form-control:focus {
-    border-color: #ffa500; 
-    box-shadow: 0 0 0 0.25rem rgba(255, 165, 0, 0.25);  
+    border-color: #ffa500;
+    box-shadow: 0 0 0 0.25rem rgba(255, 165, 0, 0.25);
 }
-#ContactForm{
-    margin-top:-220px;
+
+#ContactForm {
+    margin-top: -220px;
 }
 
 .notification {
@@ -206,7 +220,7 @@ form label {
     padding: 15px;
     border-radius: 5px;
     font-size: 16px;
-    z-index: 9999;  
+    z-index: 9999;
     animation: fadeIn 0.5s, fadeOut 0.5s 4.5s;
 }
 
@@ -243,6 +257,7 @@ form label {
         transform: translateY(-10px);
     }
 }
-#number{
-    color:black;
+
+#number {
+    color: black;
 }
