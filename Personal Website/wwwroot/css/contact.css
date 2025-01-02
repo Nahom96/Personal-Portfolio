@@ -1,13 +1,10 @@
-﻿﻿#ContactSection {
-    background-color: white;
-}
-
-#contact-header {
+﻿#contact-header {
     color: black;
     font-size: 40px;
-    padding-top: 80px;
-    position: relative;
+    padding-top: 80px; /* space from the top of the page */
     text-align: center;
+    position: relative;
+    font-family: 'PT Serif', PT Serif;
 }
 
     #contact-header::after {
@@ -15,149 +12,29 @@
         display: block;
         width: 80px;
         height: 3px;
-        background-color: #FF8C00;
-        margin: 5px auto 0;
+        background-color: #FF8C00; /* Orange line */
+        margin: 10px auto 0; /* This controls the space between the text and the orange line */
         position: relative;
         top: 10px;
     }
 
-
-
-.buttons-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    margin-top: -240px;
-
-}
-
-/* Button styles for LinkedIn */
-.Btn {
-    border: none;
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    display: flex;
-    margin-top: -25px;
-    align-items: center;
-    justify-content: center;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    position: relative;
-    background: #0274b3;
-}
-
-.svgIcon {
-    transition-duration: 0.3s;
-}
-
-    .svgIcon path {
-        fill: white;
-    }
-
-.text {
-    position: absolute;
-    color: rgb(255, 255, 255);
-    font-weight: 600;
-    opacity: 0;
-    width: 120px;
-    text-align: center;
-    left: 50%;
-    transform: translateX(-50%);
-    transition-duration: 0.4s;
-}
-
-.Btn:hover {
-    width: 110px;
-    transition-duration: 0.4s;
-    border-radius: 30px;
-}
-
-    .Btn:hover .text {
-        opacity: 1;
-        transition-duration: 0.4s;
-    }
-
-    .Btn:hover .svgIcon {
-        opacity: 0;
-        transition-duration: 0.3s;
-    }
-
-/* Button styles for Github */
-.Btn-github {
-    border: none;
-    border-radius: 50%;
-    width: 45px;
-    margin-top: -25px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition-duration: .4s;
-    cursor: pointer;
-    position: relative;
-    background-color: rgb(31, 31, 31);
-    overflow: hidden;
-}
-
-.svgIcon {
-    transition-duration: .3s;
-}
-
-    .svgIcon path {
-        fill: white;
-    }
-
-.text-github {
-    position: absolute;
-    color: rgb(255, 255, 255);
-    font-weight: 600;
-    opacity: 0;
-    width: 120px;
-    text-align: center;
-    left: 50%;
-    transform: translateX(-50%);
-    transition-duration: 0.4s;
-}
-
-.Btn-github:hover {
-    width: 110px;
-    transition-duration: .4s;
-    border-radius: 30px;
-}
-
-    .Btn-github:hover .text-github {
-        opacity: 1;
-        transition-duration: .4s;
-    }
-
-    .Btn-github:hover .svgIcon {
-        opacity: 0;
-        transition-duration: .3s;
-    }
-
-
+/* Form container */
 .form-container {
-    position: absolute;
-    top: 100px; /* Adjust to a suitable position from top */
-    left: 50%;
-    transform: translateX(-50%); /* Center the form horizontally */
+    margin-top: 10px; /* Adjust this margin to control space between the line and the form */
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Style the form */
+/* Form styling */
 .form {
     width: 400px;
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: #f9f9f9;
 }
-/* Style for labels */
+
 form label {
     display: block;
     margin-bottom: 8px;
@@ -165,7 +42,7 @@ form label {
     color: #333;
 }
 
-.input-field {
+.input-field, .textarea-field {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -175,18 +52,6 @@ form label {
     box-sizing: border-box;
 }
 
-.textarea-field {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    box-sizing: border-box;
-    resize: vertical;
-}
-
-/* Style for the submit button */
 .submit-btn {
     width: 100%;
     padding: 12px;
@@ -207,10 +72,6 @@ form label {
 .form-control:focus {
     border-color: #ffa500;
     box-shadow: 0 0 0 0.25rem rgba(255, 165, 0, 0.25);
-}
-
-#ContactForm {
-    margin-top: -220px;
 }
 
 .notification {
@@ -260,4 +121,16 @@ form label {
 
 #number {
     color: black;
+}
+#word {
+    position: center;
+    font-family: 'PT Serif', PT Serif;
+    font-weight: 300;
+    font-size: 1.45rem;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0 auto 1.5rem;
+    max-width: 800px;
+    color:grey;
+    padding-top:20px;
 }

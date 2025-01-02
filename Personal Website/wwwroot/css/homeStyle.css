@@ -127,6 +127,7 @@ nav.navbar {
     padding-left: 4.5rem;
     font-weight: bolder;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: 'PT Serif', PT Serif;
 }
 
     nav.navbar .nav-link {

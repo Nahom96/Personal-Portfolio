@@ -1,4 +1,7 @@
-﻿.container-fluid {
+﻿#portfolio {
+    font-family: 'PT Serif', PT Serif;
+}
+.container-fluid {
     padding: 0;
 }
 
@@ -26,6 +29,7 @@
 .portfolio-box-caption {
     position: absolute;
     top: 50%;
+    font-family: 'PT Serif', PT Serif;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
